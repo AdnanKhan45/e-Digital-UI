@@ -1,5 +1,6 @@
 import 'package:e_digital_shop/pages/filter_page.dart';
 import 'package:e_digital_shop/pages/homePage.dart';
+import 'package:e_digital_shop/pages/page_1.dart';
 import 'package:e_digital_shop/pages/search_page.dart';
 import 'package:e_digital_shop/pages/view_image.dart';
 import 'package:e_digital_shop/screens/page_2.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blueGrey ),
       title: "e digital shop",
-      home: FilterPage(),
+      home: FerberPage(),
     );
   }
 }
