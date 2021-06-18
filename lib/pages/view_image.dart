@@ -32,22 +32,17 @@ class ViewPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8.0,),
-            Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10.0),
-                      child: Text("14 votes", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.grey[500]),),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10.0),
-                      child: Text("AMOR is the font of combines ancient Roman\nculture with a touch of hi-tech to give it a\nmodern and edgy touch this typeface is only\n available for UPPERCASE", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),),
-                    )
-                  ],
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(left: 12.0, top: 5.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("14 votes", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.grey[500]),),
+                  Container(
+                    child: Text("AMOR is the font of combines ancient Roman culture with a touch of hi-tech to give it a modern and edgy touch this typeface is only available for UPPERCASE.",overflow: TextOverflow.ellipsis, maxLines: 4, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),),
+                  )
+                ],
+              ),
             )
           ],
         ),

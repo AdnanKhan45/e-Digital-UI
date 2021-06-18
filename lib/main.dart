@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blueGrey ),
       title: "e digital shop",
-      home: FerberPage(),
+      home: SecondPage(),
     );
   }
 }

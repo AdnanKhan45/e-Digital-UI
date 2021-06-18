@@ -94,7 +94,7 @@ class SearchPage extends StatelessWidget {
                         style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                       ),
                       Text(
-                        "Dummy Description",
+                        "Dummy Description, Description, Descriprtion Description",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey[800]),

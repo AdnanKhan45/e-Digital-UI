@@ -17,7 +17,7 @@ class _ThirdPageState extends State<ThirdPage> {
               padding: const EdgeInsets.only(top: 30.0),
               child: Center(
                 child: Text(
-                  "Men's New\nArrivals",
+                  "Men's New\n\t\tArrivals",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
                 ),
               ),
@@ -65,19 +65,25 @@ class _ThirdPageState extends State<ThirdPage> {
                           margin: EdgeInsets.all(10.0),
                           width: double.infinity,
                           height: 180,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(20.0)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(20.0)),
                         ),
                         Row(
                           children: [
-                            Text("\t\tRs. 13000", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                            Text(
+                              "\t\tRs. 13000",
+                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
                             SizedBox(width: 65.0),
                             Icon(Icons.favorite_border)
                           ],
                         ),
-                        Text("\t\tThis Product is beautiful")
+                        Expanded(
+                          child: Text(
+                            "\t\tThis Product is beautiful beautiful, beautiful",
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        )
                       ],
                     );
                   },
