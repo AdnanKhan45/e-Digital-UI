@@ -48,7 +48,6 @@ class _FilterPageState extends State<FilterPage> {
                     e,
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
                   ),
-
                 );
               }).toList(),
             ),
